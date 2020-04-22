@@ -8,6 +8,7 @@ mix.setPublicPath('public')
     .options({
         processCssUrls: false
     })
+    .copy(`assets/images`, `public/dist/images`)
     .extract()
     .version();
 
